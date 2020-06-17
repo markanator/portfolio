@@ -1,0 +1,134 @@
+.portfolio-wrapper{
+  margin-top: 2rem;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  h2 a.view-all {
+    display: inline-block;
+    padding: .5rem .75rem;
+    background: #f2f2f2;
+    border-radius: 6px;
+    color: #5f5f5f;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: .25rem 0 0 2rem;
+  }
+  
+  h2 a.view-all:focus,.front-page h2 a.view-all:hover {
+    background: #e5e5e5;
+  }
+
+  .section {
+    margin: 40px 0;
+  }
+  
+  .section:first-of-type {
+    margin-bottom: 0;
+  }
+
+  .projects .each {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 0;
+
+    h2 {
+      font-size: 1.2rem;
+      border-bottom: none;
+      margin: 0 1rem 0 0;
+      font-weight: 500;
+      color: #111;
+      padding: 0;
+      min-width: 110px;
+    }
+    
+    h2 a {
+      display: flex;
+      color: #111;
+      align-items: center;
+    }
+    
+    h2 .project-icon {
+      display: inline-block;
+      font-size: 2rem;
+      margin-right: 1rem;
+    }
+    
+    h2 .project-title {
+      display: inline-block;
+      letter-spacing: -.02rem;
+    }
+    
+    p {
+      //display: none;
+      color: rgba(0,0,0,.6);
+      font-weight: 400;
+      font-size: 1rem;
+      margin: 0;
+    }
+    
+    .buttons {
+        display: flex;
+        align-items: center;
+    }
+    
+    .button {
+        margin-left: .5rem;
+        padding: .5rem;
+        font-size: 1rem;
+    }
+  }
+
+
+
+}
+
+
+@media (min-width: 620px) {
+  .portfolio-wrapper {
+    .section {
+      margin:4rem 0;
+    }
+
+    h2 {
+        justify-content:flex-start;
+    }
+
+  }
+
+  .projects .each {
+    display:flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #eee;
+
+    .each:last-of-type {
+      border-bottom: none;
+    }
+    h2 {
+      width: 150px;
+      min-width: 150px;
+      max-width: 150px;
+      font-size: 1.3rem;
+      margin-right: 1rem;
+    }
+    p {
+      display: block;
+      flex: 1 1;
+      margin: 0 1.5rem 0 0;
+      font-size: 1.2rem;
+    }
+    .button {
+      padding: .45rem 1.25rem;
+      font-size: .9rem;
+    }
+
+  }
+
+}
