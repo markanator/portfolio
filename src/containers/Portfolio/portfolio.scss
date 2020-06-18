@@ -1,5 +1,5 @@
 .portfolio-wrapper{
-  margin-top: 2rem;
+  //margin-top: 2rem;
 
   h2 {
     display: flex;
@@ -37,7 +37,8 @@
     align-items: center;
     justify-content: space-between;
     padding: .5rem 0;
-
+  }
+  .projects {
     h2 {
       font-size: 1.2rem;
       border-bottom: none;
@@ -64,15 +65,14 @@
       display: inline-block;
       letter-spacing: -.02rem;
     }
-    
+
     p {
-      //display: none;
+      display: none;
       color: rgba(0,0,0,.6);
       font-weight: 400;
-      font-size: 1rem;
       margin: 0;
     }
-    
+
     .buttons {
         display: flex;
         align-items: center;
@@ -85,8 +85,6 @@
     }
   }
 
-
-
 }
 
 
@@ -94,6 +92,12 @@
   .portfolio-wrapper {
     .section {
       margin:4rem 0;
+      p {
+        display: block;
+        flex: 1 1;
+        margin: 0 1.5rem 0 0;
+        font-size: 1.2rem;
+      }
     }
 
     h2 {
@@ -107,10 +111,12 @@
     justify-content: space-between;
     padding: 1.5rem 0;
     border-bottom: 1px solid #eee;
+  }
 
-    .each:last-of-type {
-      border-bottom: none;
-    }
+  .projects .each:last-of-type {
+    border-bottom: none;
+  }
+  .projects {
     h2 {
       width: 150px;
       min-width: 150px;
@@ -118,17 +124,16 @@
       font-size: 1.3rem;
       margin-right: 1rem;
     }
+    .button {
+      padding: .45rem 1.25rem;
+      font-size: .9rem;
+    }
     p {
       display: block;
       flex: 1 1;
       margin: 0 1.5rem 0 0;
       font-size: 1.2rem;
     }
-    .button {
-      padding: .45rem 1.25rem;
-      font-size: .9rem;
-    }
-
   }
-
 }
+// end media

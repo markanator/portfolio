@@ -152,6 +152,15 @@ a:hover {
     color: #2161f2;
 }
 
+dl,
+ol,
+p,
+table,
+ul {
+    margin: 0 0 1.5rem;
+    font-size: 1.15rem;
+}
+
 h1,
 h2,
 h3,
@@ -302,38 +311,10 @@ strong {
     align-items: center;
 }
 
-.text-right {
-    text-align: right;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-.block {
-    display: block;
-}
-
-.inline-block {
-    display: inline-block;
-}
-
-.inline {
-    display: inline;
-}
-
 .vertical-center {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.flex {
-    display: flex;
 }
 
 .show {
@@ -342,10 +323,6 @@ strong {
 
 .hide {
     display: none!important;
-}
-
-.invisible {
-    visibility: hidden;
 }
 
 ul li p {
@@ -371,9 +348,9 @@ ul {
 ul li {
     position: relative;
     list-style-type: none;
-    margin-bottom: 0.3rem;
+    margin-bottom: .3rem;
     padding-left: 1.5rem;
-    margin-left: 0.5rem;
+    margin-left: .5rem;
 }
 
 ul li.task-list-item {
@@ -403,7 +380,30 @@ ul li:before {
     padding: 1px 2px;
     border-radius: 4px;
 }
+
+.App-wrapper {
+    margin-top: 55px;
+    padding: 40px 0 0;
+    min-height: calc(100vh - 190px);
+}
+h1,
+h1:not(:first-child),
+h2,
+h2:not(:first-child),
+h3,
+h3:not(:first-child),
+h4,
+h4:not(:first-child),
+h5,
+h5:not(:first-child) {
+    margin: 0 0 1rem;
+}
 @media (min-width: 620px) {
+    .App-wrapper {
+        margin-top: 120px;
+        padding: 60px 0 0;
+        min-height: calc(100vh - 360px);
+    }
     body {
         font-size: 1.15rem;
     }
@@ -423,8 +423,8 @@ ul li:before {
     p,
     table,
     ul {
-        margin: 0 0 2rem;
-        font-size: 1.25rem;
+        margin: 0 0 1.5rem;
+        font-size: 1.15rem;
     }
     ul li {
         padding-left: 1.5rem;
@@ -540,6 +540,5 @@ ul li:before {
         background: #127ee5!important;
         color: #fff;
     }
-
 
 }

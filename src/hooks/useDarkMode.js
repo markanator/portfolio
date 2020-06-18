@@ -9,11 +9,11 @@ export const useDarkMode = (key, initialValues) => {
 
     if (values) {
       // add
-      console.log("darkmode activated!");
+      //console.log("darkmode activated!");
       body.classList.add("dark");
     } else {
       // remove class from body element
-      console.log("darkmode de-activated!");
+      //console.log("darkmode de-activated!");
       body.classList.remove("dark");
     }
   }, [values]);
