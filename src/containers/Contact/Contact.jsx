@@ -16,6 +16,7 @@ export default function Contact() {
             Email me at <b>mark</b> dot <b>ambro</b> at <b>me</b> dot <b>com</b>{" "}
             if you'd like to speak to me.
           </p>
+          <p>I am currently available for freelance opportunities, email me or reach me on Linkedin.</p>
           <h3
             id={around}
             onMouseEnter={() => setHover(true)}

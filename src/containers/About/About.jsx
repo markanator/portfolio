@@ -13,7 +13,10 @@ export default function About() {
         <div className="page">
           <p>
             My name is Mark Ambrocio, and I am a full stack web developer and game
-            developer. I am an experienced and reliable, hardworking professional with eight years of honorable military service. I excel in customer satisfaction across a variety of different countries and languages. I am adept at handling multiple scenarios simultaneously with the highest degree of professionalism and attention to detail. 
+            developer.<br/><br/>
+             I am an experienced and reliable, hardworking professional with eight years of honorable military service.<br/><br/> 
+             I excel in customer satisfaction across a variety of different countries and languages.<br/>
+             <br/>I am adept at handling multiple scenarios simultaneously with the highest degree of professionalism and attention to detail. 
           </p>
           <h3
             id="Mark"
