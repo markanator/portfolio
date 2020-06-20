@@ -1,3 +1,8 @@
+$greenLink: #2d9c2d;
+$greenHover: #1f6b1f;
+$darkLink: #34ba34;
+$darkLinkHover: #109e10;
+
 .hero-main{
   margin: 0 auto;
   font-size: 1.1rem;
@@ -35,7 +40,7 @@
         margin: 2rem 0;
         padding: 1.5rem;
         text-align: center;
-        background: radial-gradient(circle at 20% 20%,#2d9c2d 25%,#1f6b1f 100%);
+        background: radial-gradient(circle at 20% 20%,$greenLink 25%,$greenHover 100%);
         box-shadow: 0.5rem 1.25rem 1.75rem 0 rgba(100,110,140,.4);
         color: hsla(0,0%,100%,.9);
 
@@ -62,11 +67,11 @@
           padding: 1rem 1.5rem;
           border: none!important;
           background: #fff;
-          color: #2d9c2d;
+          color: $greenLink;
         }
         
         a.button:active, a.button:focus, a.button:hover {
-          color:#1f6b1f
+          color:$greenHover;
         }
 
       } //END WARNO
@@ -180,13 +185,13 @@
 
         a.button {
           background: #111!important;
-          color: #6ab0f3!important;
+          color: rgba($darkLink,.75)!important;
         }
         a.button:active,
         a.button:focus,
         a.button:hover {
           background: #080808!important;
-          color: #99c9f7!important;
+          color: $darkLink!important;
         }
       }
       

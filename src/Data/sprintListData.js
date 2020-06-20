@@ -1,6 +1,6 @@
 export const sprintListdata = [
   {
-    Icon: "🧩",
+    Icon: "🌿",
     Title: "Adv React",
     Desc:
       "Use of class components, class component lifecycle methods, custom hooks, and React Testing Library",
@@ -14,7 +14,7 @@ export const sprintListdata = [
     hostedUrl: ""
   },
   {
-    Icon: "🧩",
+    Icon: "🍕",
     Title: "React.SPA",
     Desc: "Use of React router, react forms, and adv styling toolkits",
     Url:
@@ -27,7 +27,7 @@ export const sprintListdata = [
     hostedUrl: ""
   },
   {
-    Icon: "🧩",
+    Icon: "🚀",
     Title: "React I",
     Desc:
       "Use of ReactJS, function components, state, side effects and styling techniques",
@@ -41,7 +41,7 @@ export const sprintListdata = [
     hostedUrl: ""
   },
   {
-    Icon: "☕",
+    Icon: "📰",
     Title: "Adv JS",
     Desc:
       "Use of DOM, DOM Events, and Components, HTTP Req Methods, and the axios library",

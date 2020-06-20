@@ -1,4 +1,9 @@
 @import url( 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+$greenLink: #2d9c2d;
+$greenHover: #1f6b1f;
+$darkLink: #34ba34;
+$darkLinkHover: #109e10;
+
 a,
 abbr,
 acronym,
@@ -142,14 +147,14 @@ body {
 }
 
 a {
-    color: #5183f5;
+    color: $greenLink;
     text-decoration: none;
     font-weight: 500;
 }
 a:active,
 a:focus,
 a:hover {
-    color: #2161f2;
+    color: $greenHover;
 }
 
 dl,
@@ -213,9 +218,9 @@ a.button,
 button {
     -webkit-appearance: none;
     display: inline-block;
-    border: 2px solid #5183f5;
+    border: 2px solid $greenHover;
     border-radius: 5px;
-    background: #5183f5;
+    background: $greenHover;
     color: #fff;
     font-weight: 500;
     font-family: Helvetica Neue,Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
@@ -244,9 +249,9 @@ a.button:hover,
 button:active,
 button:focus,
 button:hover {
-    border: 2px solid #0e51ec;
+    border: 2px solid $greenLink;
     color: #fff;
-    background: #0e51ec;
+    background: $greenLink;
     text-decoration: none;
 }
 .button::-moz-focus-inner,
@@ -465,12 +470,12 @@ h5:not(:first-child) {
     color: #b3b9c5;
     //transition: background-color 0.25s ease-in-out;
     a {
-        color: #6ab0f3;
+        color: $darkLink;
     }
     a:active,
     a:focus,
     a:hover {
-        color: #238aed;
+        color: $darkLinkHover;
         background: transparent;
     }
     li,
@@ -510,7 +515,7 @@ h5:not(:first-child) {
     button {
         color: #fff;
         border: 2px solid transparent;
-        background: #0f64b5!important;
+        background: $darkLink!important;
     }
     .button:disabled,
     [type=button]:disabled,
@@ -537,7 +542,7 @@ h5:not(:first-child) {
     button:focus,
     button:hover {
         border: 2px solid transparent;
-        background: #127ee5!important;
+        background: $darkLinkHover!important;
         color: #fff;
     }
 
