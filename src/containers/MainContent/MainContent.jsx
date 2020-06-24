@@ -1,8 +1,11 @@
 import React from "react";
+// github btn api
 import GitHubButton from "react-github-btn";
+// router stuff
 import { Link } from "react-router-dom";
-
+// styles
 import "./mainContent.scss";
+import Avatar from '../../assets/img/avatar.jpg';
 
 export default function MainContent() {
   return (
@@ -32,7 +35,7 @@ export default function MainContent() {
           {/* rightside */}
           <div className="warno">
             <img
-              src="https://media-exp1.licdn.com/dms/image/C5603AQEJ2LUMzrbZgw/profile-displayphoto-shrink_200_200/0?e=1597881600&v=beta&t=VysMSpVgMom10S2bpjeFwRXXgPnEFB_BPHaFgp6e9uo"
+              src={Avatar}
               className="hero-avatar"
               alt="Mark"
             />

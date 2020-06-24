@@ -39,7 +39,7 @@ export default function About() {
                                 )
                                 : null}
                         </Link>
-                        Mark:
+                        Mark at a glance:
                     </h3>
                     <ul>
 
@@ -75,9 +75,9 @@ export default function About() {
                         </li>
                         <li>
                             <span role="img" aria-label="list item">
-                                🥤
+                                🧃
                             </span>{" "}
-                            Soda &gt; Coffee
+                            Apple Juice &gt; Coffee
                         </li>
                     </ul>
                 </div>
