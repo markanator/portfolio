@@ -13,11 +13,9 @@ import Contact from "./containers/Contact/Contact";
 import Portfolio from "./containers/Portfolio/Portfolio";
 
 export default function App() {
+    ReactGA.initialize('UA-172015867-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
 
-    function initializeReactGA(){
-        ReactGA.initialize('UA-172015867-1');
-        ReactGA.pageview('/homepage');
-    }
 
     return (
         <Layout>
