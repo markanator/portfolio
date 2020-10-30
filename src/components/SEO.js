@@ -33,7 +33,7 @@ export default function SEO({ children, location, description, title, image }) {
         name="description"
         content={
           site.siteMetadata.description ||
-          'Software Engineer, veteran, outdoorsman.'
+          'Mark Ambrocio - a Fullstack web developer, Army veteran, father and husband. This is his playground.'
         }
       />
       {/* OPEN GRAPH */}

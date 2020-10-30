@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Mark Ambrocio`,
     siteUrl: `https://markambrocio.com`,
-    description: 'Software Engineer, veteran, outdoorsman. This is playground.',
+    description:
+      'Mark Ambrocio - a Fullstack web developer, Army veteran, father and husband. This is his playground.',
   },
   plugins: [
     {
