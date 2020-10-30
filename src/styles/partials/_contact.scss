@@ -1,0 +1,52 @@
+.home__contact {
+  background-color: $wave5__main;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  // * {
+  //   color: rgba(255, 255, 255, 0.85);
+  // }
+
+  h3 {
+    margin: 0 0 0.5rem;
+  }
+  h4 {
+    font-style: italic;
+    padding-left: 1rem;
+  }
+
+  .contact__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .left {
+      width: 50%;
+      max-width: 25rem;
+    }
+    .right {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .home__contact {
+    .contact__inner {
+      .left,
+      .right {
+        p,
+        li {
+          font-size: $text-base;
+        }
+      }
+
+      .right {
+        a:before {
+          content: "\A";
+          white-space: pre;
+        }
+      }
+    }
+  }
+}

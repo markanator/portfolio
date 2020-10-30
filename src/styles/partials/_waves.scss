@@ -1,0 +1,73 @@
+.wave {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+  }
+}
+
+.wave1,
+.wave1:after {
+  height: 55px;
+  width: 100%;
+  margin-top: -0.5px;
+  background-color: $wave2__main;
+}
+.wave1:after {
+  background-color: $wave1__main;
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+
+.wave2,
+.wave2:after {
+  height: 75px;
+  width: 100%;
+  margin-top: -0.5px;
+  background-color: $wave3__main;
+}
+.wave2:after {
+  background-color: $wave2__main;
+  clip-path: polygon(0 0, 100% 0, 100% 32%, 74% 83%, 0 100%);
+}
+.wave3,
+.wave3:after {
+  height: 75px;
+  width: 100%;
+  margin-top: -0.5px;
+  background-color: $wave4__main;
+}
+.wave3:after {
+  background-color: $wave3__main;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+.wave4,
+.wave4:after {
+  height: 75px;
+  width: 100%;
+  margin-top: -0.5px;
+  background-color: $wave5__main;
+}
+.wave4:after {
+  background-color: $wave4__main;
+  clip-path: polygon(100% 0, 100% 64%, 78% 42%, 53% 81%, 28% 44%, 0 79%, 0 0);
+}
+
+.dark {
+  .wave1:after,
+  .wave2,
+  .home__skills,
+  .wave3:after,
+  .home__contact,
+  .wave4 {
+    background-color: $dark__main;
+  }
+  .wave1,
+  .home__about,
+  .wave2:after,
+  #projects,
+  .home__projects,
+  .wave4:after {
+    background-color: $dark__alt;
+  }
+}
