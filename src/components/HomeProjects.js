@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { Link } from 'gatsby'
 import React from 'react'
 import { FaHardHat } from 'react-icons/fa'
 import { showcaseList } from '../Data/showcase'
@@ -52,9 +53,9 @@ function ProjectContainer({ data }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            View Site
+            View
           </a>
-          {data.gitLink && (
+          {data.gitLink ? (
             <a
               className="href__button"
               title={`${data.title}, github link`}
@@ -64,6 +65,21 @@ function ProjectContainer({ data }) {
             >
               Github
             </a>
+          ) : (
+            <button type="button" disabled className="href__button muted">
+              Github
+            </button>
+          )}
+          {data.blogLink && (
+            <Link
+              className="href__button"
+              title={`${data.title}, github link`}
+              to={data.blogLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Case Study
+            </Link>
           )}
         </div>
       </div>

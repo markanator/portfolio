@@ -106,14 +106,15 @@ export default function HomeSkills() {
           <p>Redux</p>
         </li>
 
-        <button
+        {/* <button
           type="button"
           onClick={checkSkillsOut}
           style={{ marginBottom: '2rem' }}
         >
           {clicked ? 'See less...' : 'See more...'}
-        </button>
-        <span className={`skills__list extras ${clicked ? '' : 'collapsed'}`}>
+        </button> */}
+
+        <ul className={`skills__list extras ${clicked ? '' : 'collapsed'}`}>
           {/* transition: { duration: 1 }, */}
           {/* other */}
           <li className="si">
@@ -183,7 +184,15 @@ export default function HomeSkills() {
             <FaUnity />
             <p>Unity</p>
           </li>
-        </span>
+        </ul>
+
+        <button
+          type="button"
+          onClick={checkSkillsOut}
+          style={{ marginTop: '2rem' }}
+        >
+          {clicked ? 'See less...' : 'See more...'}
+        </button>
       </ul>
     </section>
   )

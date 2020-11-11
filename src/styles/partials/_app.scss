@@ -149,19 +149,22 @@ button:active,
   transform: scale(0.95);
 }
 
-.button.muted-button,
-a.button.muted-botton,
-.href__button.muted-button {
-  color: #454545;
-  border: 2px solid #e5e5e5;
-  background: #e5e5e5;
+.button.muted,
+button.muted,
+a.button.muted,
+.href__button.muted {
+  cursor: not-allowed;
+  border: 0px;
+  opacity: 0.5;
+  color: #4a5568 !important;
+  background: #cbd5e0 !important;
 }
-.button.muted-button:active,
-.button.muted-button:focus,
-.button.muted-button:hover,
-a.button.muted-bottom:active,
-a.button.muted-bottom:focus,
-a.button.muted-bottom:hover {
+.button.muted:active,
+.button.muted:focus,
+.button.muted:hover,
+a.button.muted:active,
+a.button.button.muted:focus,
+a.button.muted:hover {
   color: #111;
   border: 2px solid #d9d9d9;
   background: #d9d9d9;
@@ -350,7 +353,7 @@ h5:not(:first-child) {
     background-color: $dark__main;
   }
   background-color: $dark__main;
-  color: #b3b9c5;
+  color: $dark__text !important;
   //transition: background-color 0.25s ease-in-out;
 
   #home {
@@ -369,7 +372,7 @@ h5:not(:first-child) {
   ol,
   p,
   ul {
-    color: #b3b9c5;
+    color: $dark__text !important;
   }
   h2 {
     border-color: #303030;
@@ -381,18 +384,6 @@ h5:not(:first-child) {
   h5 {
     color: #eee;
   }
-
-  // .projects .each {
-  //   border-bottom: 1px solid #181818;
-
-  //   p {
-  //     color: #848991;
-  //   }
-  //   h2,
-  //   h2 a {
-  //     color: #b3b9c5;
-  //   }
-  // }
 
   .button,
   [type="button"],
@@ -411,6 +402,8 @@ h5:not(:first-child) {
   button:disabled {
     cursor: default;
     pointer-events: none;
+    background-color: #4a5568 !important;
+    border: 0px;
     opacity: 0.3;
   }
   .button:active,
@@ -435,7 +428,7 @@ h5:not(:first-child) {
     background: $darkLinkHover !important;
     color: #fff;
   }
-}
+} // end dark mode
 
 strong {
   font-weight: 700;

@@ -14,7 +14,7 @@ export default function About() {
             <img src="/aboutMe.jpg" alt="Mark Ambro" id="mark" />
           </div>
           <div className="about__text">
-            <h4>Mark Ambrocio</h4>
+            <h3>Mark Ambrocio</h3>
             <p style={{ lineHeight: '1.5rem', letterSpacing: '0.025rem' }}>
               I am a full stack web developer and hobbyist game developer. I am
               a team oriented web developer leveraging HTML, CSS and JavaScript
@@ -32,38 +32,37 @@ export default function About() {
           </div>
         </div>
 
-        <h3>Mark at a glance:</h3>
+        <h4>Mark at a glance:</h4>
         <ul id="glance">
           <li>
             <span role="img" aria-label="list item">
               💻
             </span>{' '}
-            Graduating from a Silicon Valley Code Bootcamp in May 2021
+            Graduating from Lambda School Code BootCamp, early 2021,
           </li>
           <li>
             <span role="img" aria-label="list item">
               🏫
             </span>{' '}
-            Currently a Junior studying Application Programming at a Private
-            University.
+            Studying Application Programming at Columbia College Chicago,
           </li>
           <li>
             <span role="img" aria-label="list item">
               🎮
             </span>{' '}
-            Passion for creating interactive media
+            Passion for creating interactive media,
           </li>
           <li>
             <span role="img" aria-label="list item">
               🎖️
             </span>{' '}
-            Served in the US Armed Forces from 2011-2018.
+            Honorably served in the US Army for 8 years,
           </li>
           <li>
             <span role="img" aria-label="list item">
               🌯
             </span>{' '}
-            Native Spanish speaker
+            Native Spanish speaker,
           </li>
           <li>
             <span role="img" aria-label="list item">

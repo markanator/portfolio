@@ -141,6 +141,14 @@ export default function IconsProducer({ tag }) {
           title={tag}
         />
       )
+    case 'squarespace':
+      return (
+        <img
+          src="https://images.squarespace-cdn.com/content/5d5b097ace74150001a72708/1570801591727-EYKFQBFP6B3F0BFM8V39/squarespace-logo-horizontal-white.png"
+          alt="SquareSpace"
+          title={tag}
+        />
+      )
 
     default:
       return ''

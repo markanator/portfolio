@@ -43,7 +43,7 @@ export default function ContactHome() {
               <li>
                 <strong>Twitter</strong>:{' '}
                 <a
-                  href="https://twitter.com/Mark_Ambrocio1"
+                  href="https://twitter.com/_mark_ambro"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

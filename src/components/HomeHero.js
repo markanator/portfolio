@@ -31,7 +31,6 @@ export default function HomeHero() {
           <div className="warno animate__animated animate__fadeInUp">
             <img src="/avatar.jpg" className="hero-avatar" alt="Mark" />
             <div>
-              <h3> </h3>
               <p>I love to create and collaborate! Check out what I'm up to!</p>
               <a tag="a" className="button" href="#projects">
                 View Portfolio
