@@ -1,23 +1,23 @@
-import { useEffect, useState } from 'react'
+// import { useEffect, useState } from 'react'
 
-export const useDarkMode = (key, initialValues) => {
-  const [values, setValues] = useState(false)
+// export const useDarkMode = () => {
+//   const [values, setValues] = useState(false)
 
-  useEffect(() => {
-    const body = document.getElementsByTagName('body')[0]
+//   useEffect(() => {
+//     const body = document.getElementsByTagName('body')[0]
 
-    if (values) {
-      // add
-      body.classList.add('dark')
-    } else {
-      // remove class from body element
-      body.classList.remove('dark')
-    }
-  }, [values])
+//     if (values) {
+//       // add
+//       body.classList.add('dark')
+//     } else {
+//       // remove class from body element
+//       body.classList.remove('dark')
+//     }
+//   }, [values])
 
-  const setSwitchMode = e => {
-    setValues(!values)
-  }
+//   const setSwitchMode = e => {
+//     setValues(!values)
+//   }
 
-  return [values, setSwitchMode]
-}
+//   return [values, setSwitchMode]
+// }

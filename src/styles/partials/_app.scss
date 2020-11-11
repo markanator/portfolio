@@ -45,8 +45,6 @@ h5 {
     sans-serif;
   line-height: 1.3;
   color: #111;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
@@ -87,7 +85,6 @@ h5 {
 a.button,
 button,
 .href__button {
-  -webkit-appearance: none;
   display: inline-block;
   border: 2px solid $greenHover;
   border-radius: 5px;
@@ -145,7 +142,6 @@ button:disabled,
 a.button:active,
 button:active,
 .href__button:active {
-  -webkit-transform: scale(0.95);
   transform: scale(0.95);
 }
 
@@ -287,6 +283,14 @@ h5:not(:first-child) {
   background: $wave1__main;
 }
 
+.App {
+  background: $wave1__main;
+}
+
+#Blog {
+  background: #fff;
+}
+
 @media (min-width: 620px) {
   .App-wrapper {
     margin-top: 100px;
@@ -358,6 +362,10 @@ h5:not(:first-child) {
 
   #home {
     background-color: $dark__main;
+  }
+  .App,
+  #Blog {
+    background: $dark__alt;
   }
   a {
     color: $darkLink;

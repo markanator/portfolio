@@ -1,11 +1,10 @@
 import React from 'react'
-import { ParallaxProvider } from 'react-scroll-parallax'
-import Layout from './src/components/Layout'
+import 'prismjs/themes/prism.css'
+// locals
+import DarkModeProvider from './src/hooks/DarkModeContext'
+import './src/styles/index.scss'
 
-export function wrapPageElement({ element, props }) {
-  return <Layout {...props}>{element}</Layout>
-}
-
-export function wrapRootElement({ element }) {
-  return <ParallaxProvider>{element}</ParallaxProvider>
+export function wrapRootElement({ element, props }) {
+  // eslint-disable-next-line react/jsx-props-no-spreading
+  return <DarkModeProvider {...props}>{element}</DarkModeProvider>
 }

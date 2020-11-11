@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+import { Link } from 'gatsby'
 import React from 'react'
 
 export default function Footer() {
@@ -12,10 +14,10 @@ export default function Footer() {
           >
             Ko-Fi
           </a>
-          <a href="#contact">Contact</a>
+          <Link to="/#contact">Contact</Link>
         </span>
 
-        <p>&copy; 2020 Mark Ambrocio</p>
+        <p>&copy; {new Date().getFullYear()} Mark Ambrocio</p>
       </div>
     </footer>
   )

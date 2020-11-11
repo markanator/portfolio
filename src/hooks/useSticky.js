@@ -1,43 +1,45 @@
-import { useEffect, useState, useRef } from "react";
+// /* eslint-disable no-unused-expressions */
+// import { useEffect, useState, useRef } from 'react'
 
-function useSticky() {
-  const [isSticky, setSticky] = useState(false);
-  const element = useRef(null);
+// function useSticky() {
+//   const [isSticky, setSticky] = useState(false)
+//   const element = useRef(null)
 
-  const handleScroll = () => {
-    window.scrollY > element.current.getBoundingClientRect().bottom
-      ? setSticky(true)
-      : setSticky(false);
-  };
+//   const handleScroll = () => {
+//     window.scrollY > element.current.getBoundingClientRect().bottom
+//       ? setSticky(true)
+//       : setSticky(false)
+//   }
 
-  // This function handle the scroll performance issue
-  const debounce = (func, wait = 20, immediate = true) => {
-    let timeOut;
-    return () => {
-      let context = this,
-        args = arguments;
+//   // This function handle the scroll performance issue
+//   const debounce = (func, wait = 20, immediate = true) => {
+//     let timeOut
+//     return () => {
+//       const context = this
+//       // eslint-disable-next-line prefer-rest-params
+//       const args = arguments
 
-      const later = () => {
-        timeOut = null;
-        if (!immediate) func.apply(context, args);
-      };
+//       const later = () => {
+//         timeOut = null
+//         if (!immediate) func.apply(context, args)
+//       }
 
-      const callNow = immediate && !timeOut;
-      clearTimeout(timeOut);
-      timeOut = setTimeout(later, wait);
+//       const callNow = immediate && !timeOut
+//       clearTimeout(timeOut)
+//       timeOut = setTimeout(later, wait)
 
-      if (callNow) func.apply(context, args);
-    };
-  };
+//       if (callNow) func.apply(context, args)
+//     }
+//   }
 
-  useEffect(() => {
-    window.addEventListener("scroll", debounce(handleScroll));
-    return () => {
-      window.removeEventListener("scroll", () => handleScroll);
-    };
-  }, [debounce, handleScroll]);
+//   useEffect(() => {
+//     window.addEventListener('scroll', debounce(handleScroll))
+//     return () => {
+//       window.removeEventListener('scroll', () => handleScroll)
+//     }
+//   }, [debounce, handleScroll])
 
-  return { isSticky, element };
-}
+//   return { isSticky, element }
+// }
 
-export default useSticky;
+// export default useSticky

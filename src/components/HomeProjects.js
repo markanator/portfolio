@@ -2,10 +2,14 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import { FaHardHat } from 'react-icons/fa'
+// locals
+import { useDarkMode } from '../hooks/DarkModeContext'
 import { showcaseList } from '../Data/showcase'
 import IconsProducer from './IconsProducer'
 
-export default function HomeProjects() {
+export default function HomeProjects({ location }) {
+  const { origin } = location
+  const { lights } = useDarkMode()
   return (
     <section className="home__projects">
       <div className="showcase__section">
@@ -15,7 +19,12 @@ export default function HomeProjects() {
 
           <div className="home__showcase">
             {showcaseList.map(proj => (
-              <ProjectContainer key={proj.id} data={proj} />
+              <ProjectContainer
+                key={proj.id}
+                data={proj}
+                lights={lights}
+                origin={origin}
+              />
             ))}
           </div>
         </div>
@@ -24,7 +33,7 @@ export default function HomeProjects() {
   )
 }
 
-function ProjectContainer({ data }) {
+function ProjectContainer({ data, lights, origin }) {
   return (
     <div className="project__container">
       <div className="image__container">
@@ -72,11 +81,10 @@ function ProjectContainer({ data }) {
           )}
           {data.blogLink && (
             <Link
+              to={`/${data.blogLink}`}
+              state={{ lights }}
               className="href__button"
-              title={`${data.title}, github link`}
-              to={data.blogLink}
-              target="_blank"
-              rel="noopener noreferrer"
+              title={`${data.title}, case study`}
             >
               Case Study
             </Link>

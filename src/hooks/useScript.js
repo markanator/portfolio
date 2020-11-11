@@ -15,5 +15,5 @@ const useScript = url => {
   }, [url])
 }
 
-// used like: useScript('https://use.typekit.net/foobar.js')
+// usage: useScript('https://use.typekit.net/foobar.js')
 export default useScript

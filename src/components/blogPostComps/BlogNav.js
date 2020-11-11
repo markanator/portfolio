@@ -1,37 +1,21 @@
 /* eslint-disable react/button-has-type */
-import React, { useEffect, useState, useRef } from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
 // locals
-import { useDarkMode } from '../hooks/DarkModeContext'
+import { useDarkMode } from '../../hooks/DarkModeContext'
 
 // eslint-disable-next-line react/prop-types
-const Navbar = () => {
+export default function BlogNav() {
+  // eslint-disable-next-line react/prop-types
+
   const { lights, toggleLights } = useDarkMode()
-  const [sticky, setSticky] = useState(false)
-  const ref = useRef(null)
-
-  const handleScroll = e => {
-    if (ref.current) {
-      setSticky(ref.current.getBoundingClientRect().top <= 0)
-    }
-    if (e.currentTarget.scrollY === 0) {
-      setSticky(false)
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', () => handleScroll)
-    }
-  }, [])
 
   return (
-    <nav className={`nav ${sticky ? 'scroll' : ''}`} ref={ref}>
+    <nav className="nav__blog" style={{ zIndex: '99' }}>
       <div className="nav-container">
         {/* BRAND */}
         <div className="brand">
-          <a tag="a" href="#home" className="brand-link hreff">
+          <Link to="/" className="brand-link">
             <span
               role="img"
               aria-label="taco/home"
@@ -40,14 +24,14 @@ const Navbar = () => {
               🌮
             </span>{' '}
             <span className="text">Mark Ambrocio</span>
-          </a>
+          </Link>
         </div>
         {/* LINKS */}
         <div className="links">
-          <a href={`${origin}#about`}>About</a>
-          <a href={`${origin}#skills`}>Skills</a>
-          <a href={`${origin}#projects`}>Projects</a>
-          <a href={`${origin}#contact`}>Contact</a>
+          <Link to="/#about">About</Link>
+          <Link to="/#skills">Skills</Link>
+          <Link to="/#projects">Projects</Link>
+          <Link to="/#contact">Contact</Link>
         </div>
         {/* DARKMODE */}
         <div className="ctl">
@@ -67,5 +51,3 @@ const Navbar = () => {
     </nav>
   )
 }
-
-export default Navbar

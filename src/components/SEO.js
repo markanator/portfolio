@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
+// eslint-disable-next-line react/prop-types
 export default function SEO({ children, location, description, title, image }) {
   const { site } = useStaticQuery(graphql`
     query {
@@ -37,6 +38,7 @@ export default function SEO({ children, location, description, title, image }) {
         }
       />
       {/* OPEN GRAPH */}
+      {/* eslint-disable-next-line react/prop-types */}
       {location && <meta property="og:url" content={location.href} />}
       <meta property="og:image" content={image || '/logo.svg'} />
       <meta property="og:title" content={title} key="oftitle" />
