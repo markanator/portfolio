@@ -44,10 +44,10 @@ const Navbar = () => {
         </div>
         {/* LINKS */}
         <div className="links">
-          <a href={`${origin}#about`}>About</a>
-          <a href={`${origin}#skills`}>Skills</a>
-          <a href={`${origin}#projects`}>Projects</a>
-          <a href={`${origin}#contact`}>Contact</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
         {/* DARKMODE */}
         <div className="ctl">
