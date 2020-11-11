@@ -25,7 +25,7 @@ export const showcaseList = [
     image: '/projects/wattersAdvance.jpg',
     description:
       'Lorain Ambrocio is a higher education professional assisting students through their education journey and mentoring on various aspects of the college and career application process. This blog is her story in the making.',
-    hostedLink: 'https://lorainambrocio.com/',
+    hostedLink: 'https://wattersadvance.com/',
     gitLink: '',
     blogLink: '',
     remodel: false,
