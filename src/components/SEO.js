@@ -34,20 +34,25 @@ export default function SEO({ children, location, description, title, image }) {
         name="description"
         content={
           site.siteMetadata.description ||
-          'Mark Ambrocio - a Fullstack web developer, Army veteran, father and husband. This is his playground.'
+          'Fullstack Web Developer and Army veteran. Come see some of my current skills and a small collection of past works.'
         }
       />
       {/* OPEN GRAPH */}
       {/* eslint-disable-next-line react/prop-types */}
       {location && <meta property="og:url" content={location.href} />}
-      <meta property="og:image" content={image || '/logo.svg'} />
       <meta property="og:title" content={title} key="oftitle" />
+      <meta property="og:description" content={description} key="ogdesc" />
       <meta
         property="og:site_name"
         content={site.siteMetadata.title}
         key="ogsitename"
       />
-      <meta property="og:description" content={description} key="ogdesc" />
+      <meta property="og:image" content={image || '/og_site.jpg'} />
+      {/* twitter */}
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:image" content={image || '/og_site.jpg'} />
+      <meta name="twitter:creator" content="_mark_ambro" />
       {children}
     </Helmet>
   )
