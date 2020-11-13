@@ -51,7 +51,7 @@ export default function SEO({ children, location, description, title, image }) {
       {/* twitter */}
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={title} />
-      <meta name="twitter:image" content={image || '/og_site.jpg'} />
+      <meta name="twitter:image" content={image || '/og_site.png'} />
       <meta name="twitter:creator" content="_mark_ambro" />
       {children}
     </Helmet>
