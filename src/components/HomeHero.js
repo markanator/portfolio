@@ -21,6 +21,8 @@ export default function HomeHero() {
                 data-size="large"
                 data-show-count="true"
                 aria-label="Follow @markanator on GitHub"
+                height="28"
+                width="188"
               >
                 Follow @markanator
               </GitHubButton>

@@ -2,7 +2,7 @@ export const showcaseList = [
   {
     id: 1,
     title: "Lorain's Blog",
-    image: '/projects/lorainBlog.png',
+    image: '/projects/lorainBlog.webp',
     description:
       'Lorain Ambrocio is a higher education professional assisting students through their education journey and mentoring on various aspects of the college and career application process. This blog is her story in the making.',
     hostedLink: 'https://lorainambrocio.com/',
@@ -46,7 +46,7 @@ export const showcaseList = [
   {
     id: 51,
     title: 'Mikes Pizza - Waukegan',
-    image: '/projects/mikesPizza.png',
+    image: '/projects/mikesPizza.webp',
     description:
       'A custom adaptation to Wes Bos’ Master Gatsby Course. Mikes Pizza Waukegan is a popular Pizza Joint in Illinois. Check out all the unique pizzas, slice-masters and site functionality. *No affiliation with Mikes Pizza of any kind, expressed or implied.*',
     hostedLink: 'https://mikes-pizza.markambrocio.com/',
@@ -84,7 +84,7 @@ export const showcaseList = [
 // {
 //   id: 454,
 //   title: "Food Truck Track'r",
-//   image: '/projects/foodTrucks.jpg',
+//   image: '/projects/foodTrucks.webp',
 //   description:
 //     'FoodTruck TrackR was designed to make finding and eating at a food truck fast, easy and fun. Find nearby food trucks that are currently open, view menu photos, read customer reviews and much more!',
 //   hostedLink: 'https://food-truck-tracker.markambrocio.com/',

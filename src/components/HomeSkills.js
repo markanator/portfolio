@@ -75,8 +75,10 @@ export default function HomeSkills() {
         </li>
         <li className="si">
           <img
-            src="https://avatars0.githubusercontent.com/u/20658825?s=400&v=4"
+            src="/icons/styledcomponents.png"
             alt="styled components"
+            width="50"
+            height="50"
           />
           <p>Styled Components</p>
         </li>
@@ -86,8 +88,10 @@ export default function HomeSkills() {
         </li>
         <li className="si">
           <img
-            src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/940/full/jestlogo.png"
+            src="/icons/jestlogo.png"
             alt="Jest"
+            width="52.5"
+            height="52.5"
           />
           <p>Jest</p>
         </li>
@@ -143,23 +147,19 @@ export default function HomeSkills() {
           </li>
           <li className="si">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/600px-GraphQL_Logo.svg.png"
+              src="/icons/graphql.png"
               alt="graphql"
+              width="52.5"
+              height="52.5"
             />
             <p>GraphQL</p>
           </li>
           <li className="si">
-            <img
-              src="https://www.netlify.com/img/press/logos/logomark-dark.png"
-              alt="netlify"
-            />
+            <img src="/icons/netlify.png" alt="netlify" />
             <p>Netlify</p>
           </li>
           <li className="si">
-            <img
-              src="https://assets.vercel.com/image/upload/front/favicon/round-2/180x180.png"
-              alt="Vercel"
-            />
+            <img src="/icons/vercel.png" alt="Vercel" />
             <p>Vercel</p>
           </li>
           <li className="si">
@@ -167,17 +167,11 @@ export default function HomeSkills() {
             <p>Webpack</p>
           </li>
           <li className="si">
-            <img
-              src="https://testing-library.com/img/octopus-128x128.png"
-              alt="Testing Library"
-            />
+            <img src="/icons/reactTestingLib.png" alt="Testing Library" />
             <p>React Testing Library</p>
           </li>
           <li className="si">
-            <img
-              src="https://symbols.getvecta.com/stencil_92/58_pug-icon.f03a1e640b.png"
-              alt="pug.js"
-            />
+            <img src="/icons/pug.png" alt="pug.js" />
             <p>Pug</p>
           </li>
           <li className="si">

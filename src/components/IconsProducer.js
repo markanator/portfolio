@@ -50,20 +50,14 @@ export default function IconsProducer({ tag }) {
     case 'styledcomponents':
       return (
         <img
-          src="https://avatars0.githubusercontent.com/u/20658825?s=400&v=4"
+          src="/icons/styledcomponents.png"
           alt="styled components"
           title={tag}
         />
       )
 
     case 'jest':
-      return (
-        <img
-          src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/940/full/jestlogo.png"
-          alt="Jest"
-          title={tag}
-        />
-      )
+      return <img src="/icons/jestlogo.png" alt="Jest" title={tag} />
 
     case 'redux':
       return (
@@ -85,70 +79,26 @@ export default function IconsProducer({ tag }) {
     case 'mongodb':
       return <i className="devicon-mongodb-plain-wordmark" title={tag} />
     case 'graphql':
-      return (
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/600px-GraphQL_Logo.svg.png"
-          alt="graphql"
-          title={tag}
-        />
-      )
+      return <img src="/icons/graphql.png" alt="graphql" title={tag} />
 
     case 'pug':
-      return (
-        <img
-          src="https://symbols.getvecta.com/stencil_92/58_pug-icon.f03a1e640b.png"
-          alt="pug.js"
-          title={tag}
-        />
-      )
+      return <img src="/icons/pug.png" alt="pug.js" title={tag} />
     case 'contentful':
       return (
-        <img
-          src="https://d21buns5ku92am.cloudfront.net/41748/images/347873-Mark_Circular_white_no%20shadow-3d0a86-medium-1582585736.png"
-          alt="contentful cms"
-          title={tag}
-        />
+        <img src="/icons/contentfulCMS.png" alt="contentful cms" title={tag} />
       )
     case 'tailwindcss':
-      return (
-        <img
-          src="https://symbols.getvecta.com/stencil_97/3_tailwind-css-icon.43c02f69bf.png"
-          alt="tailwindcss"
-          title={tag}
-        />
-      )
+      return <img src="/icons/tailwindcss.png" alt="tailwindcss" title={tag} />
     case 'firebase':
-      return (
-        <img
-          src="https://img.icons8.com/color/452/firebase.png"
-          alt="google firebase"
-          title={tag}
-        />
-      )
+      return <img src="/icons/firebase.png" alt="google firebase" title={tag} />
     case 'gatsbyjs':
-      return (
-        <img
-          src="https://i.pinimg.com/originals/2e/ec/6f/2eec6f1dcb5553117969640c7d254046.png"
-          alt="gatsbyjs"
-          title={tag}
-        />
-      )
+      return <img src="/icons/gatsbyjs.png" alt="gatsbyjs" title={tag} />
     case 'sanity.io':
       return (
-        <img
-          src="https://a.fsdn.com/allura/s/sanity/icon?1596159311?&w=120"
-          alt="sanity headles cms"
-          title={tag}
-        />
+        <img src="/icons/sanityIO.png" alt="sanity headles cms" title={tag} />
       )
     case 'squarespace':
-      return (
-        <img
-          src="https://images.squarespace-cdn.com/content/5d5b097ace74150001a72708/1570801591727-EYKFQBFP6B3F0BFM8V39/squarespace-logo-horizontal-white.png"
-          alt="SquareSpace"
-          title={tag}
-        />
-      )
+      return <img src="/icons/squarespace.png" alt="SquareSpace" title={tag} />
 
     default:
       return ''

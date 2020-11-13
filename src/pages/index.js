@@ -14,7 +14,7 @@ export default function index({ location }) {
   return (
     <Layout location={location}>
       <main id="home">
-        <SEO title="Home" image="/og_site.png" />
+        <SEO title="Home" image="/og_site.webp" />
         <HomeHero />
         <div className="wave wave1" id="about" />
         {/* ABOUT */}

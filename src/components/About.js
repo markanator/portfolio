@@ -11,7 +11,13 @@ export default function About() {
       <div className="page">
         <div className="about__me">
           <div className="about__image">
-            <img src="/aboutMe.jpg" alt="Mark Ambro" id="mark" />
+            <img
+              src="/aboutMe.webp"
+              alt="Mark Ambro"
+              id="mark"
+              width="482"
+              height="350"
+            />
           </div>
           <div className="about__text">
             <h3>Mark Ambrocio</h3>

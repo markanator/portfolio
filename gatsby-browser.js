@@ -1,5 +1,7 @@
 import React from 'react'
 import 'prismjs/themes/prism.css'
+import 'fontsource-roboto'
+
 // locals
 import DarkModeProvider from './src/hooks/DarkModeContext'
 import './src/styles/index.scss'
