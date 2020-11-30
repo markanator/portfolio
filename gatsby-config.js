@@ -13,9 +13,10 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-simple-analytics',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-react-helmet',
 
     {
       resolve: `gatsby-source-filesystem`,
@@ -46,9 +47,9 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-postcss`,
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-postcss',
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
