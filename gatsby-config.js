@@ -13,10 +13,15 @@ module.exports = {
     },
   },
   plugins: [
-    'gatsby-plugin-simple-analytics',
-    'gatsby-plugin-sass',
-    'gatsby-plugin-styled-components',
-    'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-simple-analytics`,
+      options: {
+        trackPageViews: true,
+      },
+    },
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
 
     {
       resolve: `gatsby-source-filesystem`,
@@ -47,13 +52,13 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-postcss',
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: true, // Print removed selectors and processed file names
+        printRejected: false, // Print removed selectors and processed file names
         develop: true, // Enable while using `gatsby develop`
       },
     },
