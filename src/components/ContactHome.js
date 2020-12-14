@@ -47,7 +47,7 @@ export default function ContactHome() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  @Mark_Ambrocio1
+                  @_mark_ambro
                 </a>
               </li>
               <li>

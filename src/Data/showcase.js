@@ -20,7 +20,19 @@ export const showcaseList = [
     ],
   },
   {
-    id: 482,
+    id: 11,
+    title: 'My Degree Coaching',
+    image: '/projects/myDegreeCoaching.jpg',
+    description:
+      'A beautiful and modern website made for those looking to excel in their collegiate adventures.',
+    hostedLink: 'https://mydegreecoaching.com/',
+    gitLink: '',
+    blogLink: '',
+    remodel: false,
+    tags: ['html', 'css', 'wordpress'],
+  },
+  {
+    id: 2,
     title: 'Nails By Mai',
     image: '/projects/nailsByMai.jpg',
     description:
@@ -32,11 +44,11 @@ export const showcaseList = [
     tags: ['html', 'css', 'wordpress'],
   },
   {
-    id: 320,
+    id: 3,
     title: "Watters' Advance",
     image: '/projects/wattersAdvance.jpg',
     description:
-      'Lorain Ambrocio is a higher education professional assisting students through their education journey and mentoring on various aspects of the college and career application process. This blog is her story in the making.',
+      'Wayne Watters is a Credit Union Guru. Wayne helps Credits Unions, all across the US, focus more heavily on online services for their members.',
     hostedLink: 'https://wattersadvance.com/',
     gitLink: '',
     blogLink: '',
@@ -44,7 +56,7 @@ export const showcaseList = [
     tags: ['squarespace'],
   },
   {
-    id: 51,
+    id: 4,
     title: 'Mikes Pizza - Waukegan',
     image: '/projects/mikesPizza.webp',
     description:
@@ -54,30 +66,6 @@ export const showcaseList = [
     blogLink: '',
     remodel: false,
     tags: ['html', 'sass', 'gatsbyjs', 'sanity.io'],
-  },
-  {
-    id: 75,
-    title: "Dang That's Yummy",
-    image: '/projects/darnYummy.png',
-    description:
-      "A custom adaptation to Wes Bos’ Learn Node Course. Dang That's Yummy is a collection of previous restaurants I have visited and enjoyed enough that it warranted its own site! See if we have any in common! 😀 ",
-    hostedLink: 'https://dang-thats-yummy.herokuapp.com/',
-    gitLink: 'https://github.com/markanator/dang-thats-delicious',
-    blogLink: '',
-    remodel: true,
-    tags: ['sass', 'pug', 'nodejs', 'express', 'heroku', 'mongodb'],
-  },
-  {
-    id: 43,
-    title: 'Virtual Reality Funding Platform',
-    image: '/projects/vrFunds.png',
-    description:
-      'Help minorities build virtual reality experiences to tell their story, building empathy and understanding. We want to build a platform that provides tech entrepreneurs with limited resources access to business training, project capital raising and mentoring. ',
-    hostedLink: 'https://fullstack-vrfunds.vercel.app/',
-    gitLink: 'https://github.com/virtual-reality-funding-platform1/back-end',
-    blogLink: '',
-    remodel: true,
-    tags: ['html', 'css', 'tailwindcss', 'react', 'firebase'],
   },
 ]
 
@@ -113,4 +101,28 @@ export const showcaseList = [
 //   blogLink: '',
 //   remodel: true,
 //   tags: ['html', 'css', 'gatsbyjs', 'express', 'heroku', 'postgresql'],
+// },
+// {
+//   id: 75,
+//   title: "Dang That's Yummy",
+//   image: '/projects/darnYummy.png',
+//   description:
+//     "A custom adaptation to Wes Bos’ Learn Node Course. Dang That's Yummy is a collection of previous restaurants I have visited and enjoyed enough that it warranted its own site! See if we have any in common! 😀 ",
+//   hostedLink: 'https://dang-thats-yummy.herokuapp.com/',
+//   gitLink: 'https://github.com/markanator/dang-thats-delicious',
+//   blogLink: '',
+//   remodel: true,
+//   tags: ['sass', 'pug', 'nodejs', 'express', 'heroku', 'mongodb'],
+// },
+// {
+//   id: 43,
+//   title: 'Virtual Reality Funding Platform',
+//   image: '/projects/vrFunds.png',
+//   description:
+//     'Help minorities build virtual reality experiences to tell their story, building empathy and understanding. We want to build a platform that provides tech entrepreneurs with limited resources access to business training, project capital raising and mentoring. ',
+//   hostedLink: 'https://fullstack-vrfunds.vercel.app/',
+//   gitLink: 'https://github.com/virtual-reality-funding-platform1/back-end',
+//   blogLink: '',
+//   remodel: true,
+//   tags: ['html', 'css', 'tailwindcss', 'react', 'firebase'],
 // },
